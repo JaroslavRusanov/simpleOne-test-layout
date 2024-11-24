@@ -56,3 +56,30 @@ nav {
     background-color: $background-button;
   }
 }
+
+
+@media(max-width: 768px) {
+  .logo {
+    display: none;
+    position: relative;
+  }
+
+  .logo::before {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    content: url("../../assets/Panel.png");
+  }
+
+  .user {
+    justify-content: end;
+    div {
+      display: none;
+    }
+  }
+  nav {
+    input {
+      display: none;
+    }
+  }
+}

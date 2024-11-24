@@ -1,15 +1,16 @@
-aside, .header-menu, .user, nav, header {
+.form-container, .header-article-right-group, .header-article-left-group, .header-article, aside, .header-menu, .user, nav, header, main {
   display: flex;
   flex-direction: row;
 }
 
-.icons-aside {
+.grow-1, .grow-2, .icons-aside {
   display: flex;
   flex-direction: column;
 }
 
 body {
   box-sizing: border-box;
+  max-width: 1900px;
   margin: 0;
   color: #2E3238;
   font-size: 14px;
@@ -70,6 +71,32 @@ nav {
   background-color: #FFF;
 }
 
+@media (width <= 768px) {
+  .logo {
+    display: none;
+    position: relative;
+  }
+
+  .logo::before {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    content: url("../../assets/Panel.png");
+  }
+
+  .user {
+    justify-content: end;
+  }
+
+  .user div {
+    display: none;
+  }
+
+  nav input {
+    display: none;
+  }
+}
+
 .icons {
   gap: 32px;
   padding: 0 32px;
@@ -101,4 +128,115 @@ nav {
 .list-style-img a {
   text-decoration: none;
   color: #2E3238;
+}
+
+@media (width <= 991px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media (width <= 768px) {
+  .icons.icons-aside {
+    display: none;
+  }
+}
+
+article {
+  overflow-x: hidden;
+}
+
+article hr {
+  margin: 0;
+  border-color: #D5D8DD;
+}
+
+.body-container {
+  padding: 16px;
+}
+
+.header-article {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-article p {
+  font-size: 20px;
+}
+
+.header-article-left-group {
+  align-items: center;
+  gap: 8px;
+}
+
+.header-article-right-group {
+  gap: 8px;
+}
+
+.btn-neutral {
+  height: 32px;
+  border: 1px solid #D5D8DD;
+  border-radius: 5px;
+  background-color: #FFF;
+}
+
+button.btn-primary {
+  border: 1px solid #99D5FF;
+  border-radius: 5px;
+  background-color: #0078CF;
+  color: #fff;
+}
+
+.header-article-body {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.form-container {
+  margin-top: 24px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+form input {
+  height: 32px;
+  border: 1px solid #D5D8DD;
+  border-radius: 5px;
+}
+
+.grow-2 {
+  gap: 8px;
+  width: 48%;
+}
+
+.grow-1 {
+  width: 98%;
+}
+
+.span-acccent {
+  color: #B21F00;
+}
+
+@media (width <= 991px) {
+  .grow-2 {
+    min-width: 100%;
+  }
+}
+
+@media (width <= 768px) {
+  .header-article {
+    justify-content: unset;
+  }
+
+  .header-article-right-group {
+    display: none;
+  }
+
+  .header-article-left-group {
+    justify-content: space-between;
+  }
 }

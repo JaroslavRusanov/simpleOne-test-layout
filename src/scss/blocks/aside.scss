@@ -37,3 +37,15 @@
 aside {
   @extend %row;
 }
+
+@media(max-width: 991px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media(max-width: 768px) {
+  .icons.icons-aside {
+    display: none;
+  }
+}

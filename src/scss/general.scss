@@ -14,7 +14,13 @@
 
 body {
   box-sizing: border-box;
+  max-width: 1900px;
   @include mg-reset;
   color: $text-main-neutral;
   font-size: 14px;
+
+}
+
+main {
+  @extend %row;
 }
