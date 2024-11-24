@@ -1,0 +1,58 @@
+header {
+  @extend %row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+nav {
+  @extend %row;
+  gap: 16px;
+}
+
+.logo {
+  img {
+    position: relative;
+  }
+}
+
+.logo-o {
+  position: absolute;
+  right: 65px;
+  top: 2px;
+}
+
+.header-input {
+  position: relative;
+  width: 296px;
+  height: 32px;
+  border: 1px solid $border-neutral;
+  border-radius: 5px;
+  z-index: 0;
+}
+
+.header-input::before {  
+  display: inline-block;
+  background-image: url("../../assets/Search.png");
+  width: 32px;
+  height: 32px;
+  content: "";
+}
+
+
+.rounded {
+  border-radius: 50%;
+}
+
+.user {
+  @extend %row;
+  gap: 8px;
+  align-items: center;
+  div {
+    width: auto;
+  }
+  button {
+    border: none;
+    background-color: $background-button;
+  }
+}

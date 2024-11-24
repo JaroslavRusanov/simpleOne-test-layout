@@ -1,0 +1,104 @@
+aside, .header-menu, .user, nav, header {
+  display: flex;
+  flex-direction: row;
+}
+
+.icons-aside {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  color: #2E3238;
+  font-size: 14px;
+}
+
+header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+nav {
+  gap: 16px;
+}
+
+.logo img {
+  position: relative;
+}
+
+.logo-o {
+  position: absolute;
+  right: 65px;
+  top: 2px;
+}
+
+.header-input {
+  position: relative;
+  width: 296px;
+  height: 32px;
+  border: 1px solid #D5D8DD;
+  border-radius: 5px;
+  z-index: 0;
+}
+
+.header-input::before {
+  display: inline-block;
+  background-image: url("../../assets/Search.png");
+  width: 32px;
+  height: 32px;
+  content: "";
+}
+
+.rounded {
+  border-radius: 50%;
+}
+
+.user {
+  gap: 8px;
+  align-items: center;
+}
+
+.user div {
+  width: auto;
+}
+
+.user button {
+  border: none;
+  background-color: #FFF;
+}
+
+.icons {
+  gap: 32px;
+  padding: 0 32px;
+}
+
+.menu {
+  border: 1px solid #D5D8DD;
+}
+
+.menu-input {
+  border-color: #D5D8DD;
+  border-radius: 5px;
+}
+
+.header-menu {
+  gap: 8px;
+  padding: 16px;
+  border: 1px solid #D5D8DD;
+}
+
+.list-style-img {
+  list-style-image: url("../../assets/List.png");
+}
+
+.list-style-img li {
+  padding: 10px;
+}
+
+.list-style-img a {
+  text-decoration: none;
+  color: #2E3238;
+}

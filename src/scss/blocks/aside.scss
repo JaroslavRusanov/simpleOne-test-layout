@@ -1,0 +1,39 @@
+.icons-aside {
+  @extend %col;
+}
+
+.icons {
+  gap: 32px;
+  padding:0 32px 0;
+}
+
+.menu {
+  border: 1px solid $border-neutral;
+}
+
+.menu-input {
+  border-color: $border-neutral;
+  border-radius: 5px;
+}
+
+.header-menu {
+  @extend %row;
+  gap: 8px;
+  padding: 16px;
+  border: 1px solid $border-neutral;
+}
+
+.list-style-img {
+  list-style-image: url("../../assets/List.png");
+  li {
+    padding: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: $text-main-neutral;
+  }
+}
+
+aside {
+  @extend %row;
+}

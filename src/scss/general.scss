@@ -1,0 +1,20 @@
+@mixin mg-reset {
+  margin: 0;
+}
+
+%row {
+  display: flex;
+  flex-direction: row;
+}
+
+%col {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  box-sizing: border-box;
+  @include mg-reset;
+  color: $text-main-neutral;
+  font-size: 14px;
+}
